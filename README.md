@@ -13,6 +13,7 @@ Sample xmpp web client implemented with Java-jetty.
 
 * Connection gets disconnected after it remains idle for 5 minutes.
 * Port number should be configured in a single property file. (Now configuration into js file is also needed.)
+* SSL support.
 * Update the roster list after entries are updated.
 * Update the roster list after entries are deleted.
 * Improve design.
