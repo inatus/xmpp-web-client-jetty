@@ -29,6 +29,8 @@ public class Main {
 
 		XmppWebSocketServlet wss = new XmppWebSocketServlet();
 		ServletHolder sh = new ServletHolder(wss);
+		//Preventing the WebSocket connection from terminating after 5mins of idle time
+		sh.setInitParameter("maxIdleTime", "-1");
 		ServletContextHandler sch = new ServletContextHandler();
 		sch.addServlet(sh, "/websocket/*");
 
